@@ -1,169 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diseño - Pepe Vieira</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuna Nube - El descanso de tu bebé</title>
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #4a4a4a;
+            line-height: 1.6;
+            background-color: #fdfbf9;
+        }
 
+        /* Navegación */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .logo { font-weight: bold; font-size: 1.5rem; color: #a8dadc; }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 10%;
+            background: linear-gradient(to right, #fdfbf9, #f1f7f7);
+        }
+
+        .hero-content { max-width: 500px; }
+
+        h1 { font-size: 2.8rem; color: #333; margin-bottom: 20px; line-height: 1.2; }
+
+        .btn-main {
+            display: inline-block;
+            background-color: #a8dadc;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-main:hover { background-color: #457b9d; }
+
+        /* Características */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+
+        .feature-card i { font-size: 2rem; display: block; margin-bottom: 15px; }
+
+        /* Testimonios */
+        .testimonials {
+            background-color: #f1f7f7;
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        blockquote {
+            font-style: italic;
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px;
+            text-align: center;
+            background: #333;
+            color: white;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .hero { flex-direction: column; text-align: center; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
 </head>
 <body>
-  <div class="canvas">
-    <!-- Header -->
-    <header>
-      <img class="logo" src="Logo.png" alt="Logo">
-      <nav>
-        <a href="#">Menú</a>
-        <a href="#">Contacto</a>
-      </nav>
+
+    <nav>
+        <div class="logo">BabyCuna ✨</div>
+        <div>
+            <a href="#" style="margin-right: 20px; text-decoration: none; color: #666;">Modelos</a>
+            <a href="#" class="btn-main" style="padding: 10px 20px;">Comprar</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>El sueño más seguro para quien más quieres.</h1>
+            <p>Diseñada con madera sostenible y textiles orgánicos. Porque un bebé que descansa bien, es un bebé feliz.</p>
+            <br>
+            <a href="#" class="btn-main">Descubrir la Cuna Nube</a>
+        </div>
+        <div class="hero-image">
+            <div style="width: 350px; height: 350px; background: #ddd; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                Imagen de Cuna
+            </div>
+        </div>
     </header>
 
-    <!-- Hero -->
-    <section class="hero">
-      <img src="Cabecera.png" >
-    </section>
-
-    <!-- Barra de navegación roja -->
-    <nav class="nav-bar">
-      <div class="link-sobre-nosotros">
-      <a href="#">Sobre Nosotros</a>
-      </div>
-      <div class=" link-nuestros-platos">
-      <a href="#">Nuestros Platos</a>
-      </div>
-    <div class="cart position-relative" style="font-size: 25px;">
-      <a href="#" title="Carrito">🛒</a>
-      <span class="position-absolute top-0 start-10 translate-middle badge rounded-pill bg-danger" style="font-size: 0.6rem;">
-      2
-      <span class="visually-hidden">Artículos en el carrito</span>
-    </span>
-    </div>
-    </nav>
- 
-    <!-- Búsqueda y carrito -->
-    <div class="search-cart">
-      <div class="search-box">
-        <input type="text" placeholder="Buscar...">
-        <button>🔍</button>
-      </div>
-    </div>
-
-    <!-- Sección de productos -->
-  
-  <a href="#" class="ver-productos">ver productos...</a>
-  <section class="layout-dos-columnas">
-<section class="products-section">
- <div class="caja-novedades">
-    <span class="badge-novedad">Novedades</span>
-  </div>
-  <div class="seccion-novedades">
-<div class="product-card">
-  <div class="product-image" style="background-image: url('Hambúrguer.jpg');"></div>
-  <div class="product-name Hamburguesa">Hamburguesa Gourmet</div>
-  <div class="product-price sec1">6€</div>
-  <button class="add-to-cart">añadir al carrito</button>
-</div>
-
-
-    <div class="product-card">
-    <div class="product-image" style="background-image: url('Tacos\ de\ Pescado\ Ensenada.jpg');"></div>
-      <div class="product-name Tacos">Tacos de Pescado</div>
-      <div class="product-price sec1">11€</div>
-       <button class="add-to-cart">añadir al carrito</button>
-    </div>
-  </div>
- <div class="caja-destacados">
-    <span class="badge-destacado">Destacados</span>
-  </div>
-  <!-- Sección Destacados -->
-  <div class="seccion-destacados">
-  
-    <div class="product-card">
-     <div class="product-image" style="background-image: url('Pizza\ Margarita_.jpg');"></div>
-      <div class="product-name pizza">Pizza Margarita</div>
-      <div class="product-price sec2">8€</div>
-       <button class="add-to-cart">añadir al carrito</button>
-    </div>
-
-    <div class="product-card">
-       <div class="product-image" style="background-image: url('Caesar\ Salad.jpg');"></div>
-      <div class="product-name Ensalada">Ensalada César</div>
-      <div class="product-price sec2">7€</div>
-       <button class="add-to-cart">añadir al carrito</button>
-    </div>
-  
-<div class="boton-restaurante">
-  <a href="#">Ten un restaurante en casa!!</a>
-</div>
-
-
-</section>
-    <!-- Opiniones -->
-    <section class="opinions-section">
-      <h2>¿Qué piensa la gente de nosotros?</h2>
-      
-       <div class="cabecera-opiniones">
-      <h1>Opiniones</h1>
-      </div>
-      <div class="opinions-grid">
-        <div class="opinion-card">
-          <div class="opinion-header">
-            <div class="opinion-avatar"></div>
-            <div class="opinion-name">Pepito Muñez</div>
-          </div>
-          <p>⭐⭐⭐⭐⭐  La comida llegó caliente y deliciosa. ¡Repetiré seguro!</p>
+    <section class="features">
+        <div class="feature-card">
+            <span>🌿</span>
+            <h3>100% Orgánica</h3>
+            <p>Materiales libres de tóxicos y químicos para la salud de tu bebé.</p>
         </div>
-        <div class="opinion-card">
-          <div class="opinion-header">
-            <div class="opinion-avatar"></div>
-            <div class="opinion-name">Pedro Soles</div>
-          </div>
-          <p>⭐⭐⭐⭐⭐  Excelente servicio y los postres son espectaculares.</p>
+        <div class="feature-card">
+            <span>🛠️</span>
+            <h3>Fácil Montaje</h3>
+            <p>Lista para usar en menos de 15 minutos. Sin complicaciones.</p>
         </div>
-         <div class="opinions-grid">
-        <div class="opinion-card">
-          <div class="opinion-header">
-            <div class="opinion-avatar"></div>
-            <div class="opinion-name">Juan Pérez</div>
-          </div>
-          <p>⭐⭐⭐⭐  Todo muy rico, aunque el pedido tardó un poco más de lo esperado.</p>
-        </div>
-         <div class="opinion-card">
-          <div class="opinion-header">
-            <div class="opinion-avatar"></div>
-            <div class="opinion-name">María Gómez</div>
-          </div>
-          <p>⭐⭐⭐⭐⭐  Menú variado y bien presentado. Muy recomendable.</p>
-        </div>
-         <div class="opinion-card">
-          <div class="opinion-header">
-            <div class="opinion-avatar"></div>
-            <div class="opinion-name">Carmen Lato</div>
-          </div>
-          <p>⭐⭐⭐⭐  Sabores auténticos y frescos. El emplatado podría mejorar un poco.</p>
-        </div>
-        <!-- Agregar más opiniones igual -->
-      </div>
-        <div class="bonton-ver-opiniones">
-          <a href="#">VER MÁS OPINIONES...</a>
+        <div class="feature-card">
+            <span>📏</span>
+            <h3>Evolutiva</h3>
+            <p>Se adapta al crecimiento de tu hijo, convirtiéndose en camita.</p>
         </div>
     </section>
-</section> 
-    <!-- Footer -->
-<footer>
-  <div class="contacto">
-    <a href="#">Contacto</a>  
-    <a href="#">Redes Sociales</a>
-    <a href="#">Ubicación</a>
-  </div>
 
-  <div class="arroba">
-    <p>© 2025 Pepe Vieira</p>
-  </div>
-</footer>
+    <section class="testimonials">
+        <blockquote>
+            "La mejor inversión que hemos hecho. El diseño es minimalista y la seguridad que transmite no tiene precio. ¡Leo duerme de maravilla!"
+        </blockquote>
+        <p><strong>- Elena Rodríguez</strong></p>
+    </section>
 
-  </div>
+    <footer>
+        <p>&copy; 2026 BabyCuna. Fabricado con amor para familias reales.</p>
+        <p style="font-size: 0.8rem; color: #999;">Envío gratuito a toda la península.</p>
+    </footer>
+
 </body>
 </html>
 
